@@ -1,0 +1,101 @@
+/* Full page layout */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  background: #ffe1b3; /* same beige as landing */
+}
+
+/* Card design */
+.login-card {
+  width: 380px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* Form groups */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-form input {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #0b3954;
+  box-shadow: 0 0 0 2px rgba(11, 57, 84, 0.1);
+}
+
+/* Submit button */
+.login-submit {
+  margin-top: 6px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #0b3954, #087e8b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-submit:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #087e8b, #0b3954);
+}
+
+.login-submit:active {
+  transform: translateY(0);
+}
+
+/* Footer text */
+.login-footer-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.login-footer-text span {
+  color: #0b3954;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Message styling */
+.login-message {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #087e8b;
+  text-align: center;
+}
