@@ -1,6 +1,6 @@
 .footer {
-  background: #0c0c0c;
-  color: #fff;
+  background:#000000;
+  color: #ffffff;
   padding: 60px 10%;
   text-align: left;
 
@@ -36,9 +36,12 @@
 }
 
 .footer-logo {
+  width: 150px;
+  height: 150px;
   font-size: 2rem;
   font-weight: 700;
 }
+
 
 .footer-about {
   margin-top: 12px;
@@ -67,8 +70,8 @@ height: 30px;
 
 .footer-disclaimer {
   text-align: center;
-  opacity: 0.7;
-  margin: 10px 0;
+   margin-top: 50px;   
+  text-align: center;
   font-size: 0.85rem;
 }
 
@@ -92,5 +95,68 @@ height: 30px;
 
   .footer-col {
     align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* already added: hero... */
+
+  /* Section titles */
+  .why-title,
+  .exam-title,
+  .notes-title,
+  .features-title {
+    font-size: 22px;
+    padding: 0 12px;
+  }
+
+  /* Containers which hold cards – adjust names to yours */
+  .why-container,
+  .exam-container,
+  .notes-container,
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Individual cards */
+  .why-card,
+  .exam-card,
+  .notes-card,
+  .features-card {
+    width: 90%;
+    max-width: 380px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 32px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;   /* or center, if you prefer */
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 12px;
   }
 }

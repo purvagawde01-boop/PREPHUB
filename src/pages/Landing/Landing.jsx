@@ -2,21 +2,18 @@ import React from 'react'
 import './Landing.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import hero2 from '../../assets/hero2.png'
-import bharat from '../../assets/bharat.jpg';
-import bharat1 from '../../assets/bharat1.png';
-import bsf from '../../assets/bsf.png';
-import capf from '../../assets/capf.png';
-import cisf from '../../assets/cisf.png';
-import crpf from '../../assets/crpf.jpg';
-import mns from '../../assets/mns.jpg';
-import navy from '../../assets/navy.png';
-import nda from '../../assets/nda.png';
-import ssb from '../../assets/ssb.png';
-import ssc from '../../assets/ssc.png';
-import ta from '../../assets/ta.png';
-import ebook from '../../assets/ebook.png'
+import hero1 from '../../assets/hero1.jpg'
+import agniveer from '../../assets/agniveer.png';
+import army from '../../assets/army.png';
+import drdo from '../../assets/drdo.png';
+import intell from '../../assets/intell.png';
+import para from '../../assets/para.png';
+import med from '../../assets/med.png';
+import spcl from '../../assets/spcl.png';
+import ssbb from '../../assets/ssbb.png';
+import upsc from '../../assets/upsc.png'
 import book from '../../assets/book.png'
+import ebook from '../../assets/ebook.png'
 import video from '../../assets/video.png'
 import progress from '../../assets/progress.png'
 import schedule from '../../assets/schedule.png'
@@ -29,25 +26,8 @@ const Landing = () => {
       <Navbar />
 
       <div id=" hero" className="hero">
-        <img src={hero2} alt="" className="hero-img" />
-
-        <div className="hero-text">
-          <h1>Your's PrepAlly</h1>
-          <p>
-            Let’s learn, grow, and get closer to your
-            <br />
-            Dream Uniform
-          </p>
-
-  
-          <button className="signup-btn" onClick={() => navigate("/Signup")}>
-            Lets Begin
-          </button>
         </div>
-      </div>
 
-     
-  
     <div id="why" className="why-section">
   <h2 className="why-title">Why Choose Us?</h2>
     <div className="why-container">
@@ -58,50 +38,48 @@ const Landing = () => {
     <div className="why-card">Keep students motivated with quotes, reminders, and interactive content</div>
     <div className="why-card">Make preparation resources easily accessible with syllabus, books, and YouTube tutorials</div>
     <div className="why-card">Conduct mock tests with instant results </div>
-  </div>
+
+  <div className="why-card">Provide a centralized platform for 26+ defence exam preparation</div>
+  <div className="why-card">Offer authentic study materials, eligibility criteria, and exam notifications</div>
+  <div className="why-card">Enable progress tracking through analytics, charts, and feedback</div>
+  <div className="why-card">Keep students motivated with quotes, reminders, and interactive content</div>
+  <div className="why-card">Make preparation resources easily accessible with syllabus, books, and YouTube tutorials</div>
+  <div className="why-card">Conduct mock tests with instant results</div>
+</div>
 </div>
 </div>
 
 
 <div id="course" className="course-section">
-  <h2 className="course-title">Courses We Offer</h2>
-
-  <div className="course-grid">
+  <h2 className="course-title">Exam Category</h2>
+    <div className="course-grid">
+    
     <div className="course-card">
-      <img src={bharat} alt="" /></div>
+     <img src={agniveer} alt='' /></div>
+    
+    <div className="course-card">
+      <img src={army} alt="" /></div>
 
     <div className="course-card">
-      <img src={bharat1} alt="" /></div>
-
-    <div className="course-card">
-      <img src={bsf} alt="" /></div>
+      <img src={upsc} alt="" /></div>
 
   <div className="course-card">
-      <img src={capf} alt="" /></div>
+      <img src={ssbb} alt="" /></div>
       
       <div className="course-card">
-      <img src={cisf} alt="" /></div>
+      <img src={spcl} alt="" /></div>
       
       <div className="course-card">
-      <img src={crpf} alt="" /></div>
+      <img src={para} alt="" /></div>
       
       <div className="course-card">
-      <img src={mns} alt="" /></div>
+      <img src={drdo} alt="" /></div>
 
       <div className="course-card">
-      <img src={navy} alt="" /></div>
+      <img src={med} alt="" /></div>
 
       <div className="course-card">
-      <img src={nda} alt="" /></div>
-
-      <div className="course-card">
-      <img src={ssb} alt="" /></div>
-
-      <div className="course-card">
-      <img src={ssc} alt="" /></div>
-
-      <div className="course-card">
-      <img src={ta} alt="" /></div> 
+      <img src={intell} alt="" /></div>
   </div>
 </div>
 
@@ -143,5 +121,5 @@ const Landing = () => {
 </div>
   
   )
-}
-export default Landing
+};
+export default Landing;
