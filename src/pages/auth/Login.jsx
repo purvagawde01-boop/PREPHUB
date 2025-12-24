@@ -34,8 +34,12 @@ const Login = () => {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h2 className="login-title">Welcome Back</h2>
+
+        <div className="login-header">
+        <img src="/src/assets/logo.png" alt="PrepHub Logo" className="login-logo" />
+        <h2 className="login-title">Welcome!</h2>
         <p className="login-subtitle">Login to continue your PrepHub journey</p>
+        </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
           <label>Email</label>

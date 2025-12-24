@@ -22,29 +22,23 @@ const Footer = () => {
         </div>
 
         <div className="footer-col">
-          <h3>Exam Category</h3>
+          <h3>Recruitment Streams</h3>
           <ul>
-            <li>UPSC Officer-level Exams</li>
-            <li>SSB-based Officer Entries</li>
-            <li>Army/Navy/Air Force Recruitment Streams</li>
-            <li>Agniveer & Soldier-level Entries</li>
-            <li>Special Forces & Elite Units</li>
-            <li>Paramilitary & Police Recruitment</li>
-            <li>DRDO/MES/BRO Technical Streams</li>
-            <li>Medical & Nursing Services</li>
-             <li>Intelligence & Strategic Agencies</li>
+            <li>Army Force</li>
+            <li>Navy Force</li>
+            <li>Air Force</li>
+            <li>Paramilitary Force</li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h3>Resources</h3>
           <ul>
-            <li>E-Books</li>
+            <li>Syllabus</li>
             <li>Text Books</li>
             <li>Mock Tests</li>
             <li>Video Links</li>
-            <li>Study Planner</li>
-            <li>Progress Tracker</li>
+            <li>Previous Year Papers</li>
           </ul>
         </div>
 

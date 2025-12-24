@@ -3,18 +3,15 @@ import './Landing.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import hero1 from '../../assets/hero1.jpg'
-import agniveer from '../../assets/agniveer.png';
-import army from '../../assets/army.png';
-import drdo from '../../assets/drdo.png';
-import intell from '../../assets/intell.png';
-import para from '../../assets/para.png';
-import med from '../../assets/med.png';
-import spcl from '../../assets/spcl.png';
-import ssbb from '../../assets/ssbb.png';
-import upsc from '../../assets/upsc.png'
+import para from '../../assets/para.png'
+import air from '../../assets/air.png'
+import navy from '../../assets/navy.png'
+import army from '../../assets/army.png'
 import book from '../../assets/book.png'
 import ebook from '../../assets/ebook.png'
 import video from '../../assets/video.png'
+import quest from '../../assets/quest.png'
+import mock from '../../assets/mock.png'
 import progress from '../../assets/progress.png'
 import schedule from '../../assets/schedule.png'
 import todo from '../../assets/todo.png'
@@ -51,52 +48,44 @@ const Landing = () => {
 
 
 <div id="course" className="course-section">
-  <h2 className="course-title">Exam Category</h2>
+  <h2 className="course-title">Recruitment Streams</h2>
     <div className="course-grid">
     
     <div className="course-card">
-     <img src={agniveer} alt='' /></div>
+     <img src={army} alt='' /></div>
     
     <div className="course-card">
-      <img src={army} alt="" /></div>
+      <img src={air} alt="" /></div>
 
     <div className="course-card">
-      <img src={upsc} alt="" /></div>
-
-  <div className="course-card">
-      <img src={ssbb} alt="" /></div>
-      
-      <div className="course-card">
-      <img src={spcl} alt="" /></div>
+      <img src={navy} alt="" /></div>
       
       <div className="course-card">
       <img src={para} alt="" /></div>
       
-      <div className="course-card">
-      <img src={drdo} alt="" /></div>
-
-      <div className="course-card">
-      <img src={med} alt="" /></div>
-
-      <div className="course-card">
-      <img src={intell} alt="" /></div>
   </div>
 </div>
 
 
 
 <div id="notes" className="notes-section">
-  <h2 className="notes-title">Sources of Notes</h2>
+  <h2 className="notes-title">Preparation Resources</h2>
 
   <div className="notes-grid">
     <div className="notes-card">
-      <img src={ebook} alt="" /><p>E-Books</p></div>
+      <img src={ebook} alt="" /><p>Syllabus</p></div>
 
     <div className="notes-card">
       <img src={book} alt="" /><p>Books</p></div>
 
     <div className="notes-card">
       <img src={video} alt="" /><p>Videos</p></div>
+
+    <div className="notes-card">
+      <img src={mock} alt="" /><p>Mock Test</p></div>
+
+      <div className="notes-card">
+      <img src={quest} alt="" /><p>Previous Year Papers</p></div>
     </div>
     </div>
  

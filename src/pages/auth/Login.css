@@ -6,21 +6,31 @@
   align-items: center;
   padding: 40px 16px;
   background: #ffe1b3; /* same beige as landing */
+
 }
 
 /* Card design */
 .login-card {
   width: 380px;
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 32px 28px;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  align-items: center;
+}
+
+.login-header {
+  text-align: center;
+  
+}
+
+.login-logo {
+  width: 120px;
 }
 
 .login-title {
   font-size: 26px;
   font-weight: 800;
-  margin-bottom: 6px;
 }
 
 .login-subtitle {

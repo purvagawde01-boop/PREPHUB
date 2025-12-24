@@ -29,8 +29,8 @@ const Navbar = () => {
       <div className="navbar-center desktop-menu">
         <ul>
         <li onClick={() => handleScroll("why")}>Why Choose Us</li>
-        <li onClick={() => handleScroll("course")}>Exam Category</li>
-        <li onClick={() => handleScroll("notes")}>Source of Notes</li>
+        <li onClick={() => handleScroll("course")}>Recruitment Streams</li>
+        <li onClick={() => handleScroll("notes")}>Preparation Resources</li>
         <li onClick={() => handleScroll("add")}>Additional Features</li>
       </ul>
       </div>
