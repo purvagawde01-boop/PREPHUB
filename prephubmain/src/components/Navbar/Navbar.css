@@ -1,0 +1,251 @@
+.navbar{
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 20px;
+    color: e5e5e5;
+    z-index: 20;
+  }
+
+  .desktop-menu{
+    display: flex;
+  }
+
+
+.navbar-left img{
+    width: 200px;
+}
+.navbar-center{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: -85px;
+  margin-top: -80px;
+
+}
+.navbar-center ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+.navbar-center ul li {
+  list-style: none;
+  padding: 6px 12px;
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.55);
+}
+.navbar-center ul li:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.board-text{
+  position:absolute;
+  top: 58%;
+  left: 51%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #030303;
+  z-index: 12;
+}
+.board-text h1{
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+.board-text h5{
+  margin-top: 8px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   margin-right: -8px;
+}
+
+.signup-btn {
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #0b3954, #087e8b);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.signup-btn:hover {
+  background: linear-gradient(135deg, #087e8b, #0b3954);
+  transform: translateY(-3px);
+}
+.signup-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+.nav-icons{
+  display: none;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+  .navbar {
+   position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 12px;
+    background: transparent;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;          
+  }
+  .desktop-menu{
+    display: none !important;
+  }
+  
+  .mobile-only{
+    display: flex !important;
+  }
+
+  .navbar-left img {
+    width: 90px;
+    padding: 0;
+    margin-top: -8px;
+  }
+
+  .navbar-center,
+  .navbar-right {
+    display: none;
+   
+  }
+
+  .signup-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .navbar-center {
+    position: absolute !important;
+    height: 100vh;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: left;
+    z-index: 999;
+    display: block;
+  }
+  .navbar-center ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 16px 12px;
+  }
+
+  .navbar-center li {
+    padding: 10px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .navbar-center li + li {
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .mobile-menu{
+    display: flex;
+    align-items: center;
+  }
+  .nav-icon{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  .nav-icons{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    margin-top: -6px;
+  }
+  .mobile-menu-panel{
+    position: absolute;
+    top: 65px;           /* adjust here */
+    right: 16px;
+    width: 260px;
+    background: #ffd5e1;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    padding: 10px 14px;
+    animation: mobileMenuDrop 0.25s ease-out;
+    z-index: 60;
+  }
+  .mobile-menu-panel ul{
+    list-style: none;
+    padding:0;
+    margin: 0;
+  }
+    .mobile-menu-panel li{
+      padding: 10px 4px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+     .mobile-menu-panel li:first-child{
+      border-bottom: none;
+     }
+     .mobile-menu-panel li:active {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  @keyframes mobileMenuDrop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);  /* a bit above & transparent */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);      /* in place */
+  }
+}
+
+.board-text{
+ position: absolute;
+    top: 58%;
+    left: 51%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #030303;
+    z-index: 12;
+    margin-top: -10px;
+}
+.board-text h1{
+  font-size: 22px;
+}
+.board-text h5{
+  font-size: 12px;
+  line-height: 1.4;
+}
+}

@@ -1,0 +1,162 @@
+.footer {
+  background:#000000;
+  color: #ffffff;
+  padding: 60px 10%;
+  text-align: left;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-col h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  opacity: 1;
+}
+
+.footer-logo {
+  width: 150px;
+  height: 150px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+.footer-about {
+  margin-top: 12px;
+  max-width: 280px;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin: 30px 0 15px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 30px;
+height: 30px;
+}
+
+.footer-social svg:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  color: #ffae00;
+}
+
+.footer-disclaimer {
+  text-align: center;
+   margin-top: 50px;   
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-copy {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* already added: hero... */
+
+  /* Section titles */
+  .why-title,
+  .exam-title,
+  .notes-title,
+  .features-title {
+    font-size: 22px;
+    padding: 0 12px;
+  }
+
+  /* Containers which hold cards – adjust names to yours */
+  .why-container,
+  .exam-container,
+  .notes-container,
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Individual cards */
+  .why-card,
+  .exam-card,
+  .notes-card,
+  .features-card {
+    width: 90%;
+    max-width: 380px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 32px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;   /* or center, if you prefer */
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 12px;
+  }
+}
