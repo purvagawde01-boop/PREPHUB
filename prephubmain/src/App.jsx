@@ -12,12 +12,21 @@ import Mock from './pages/content/Mock'
 import Papers from './pages/content/Papers'
 import Syllabus from './pages/content/Syllabus'
 import Videos from './pages/content/Videos'
-import AdminLogin from './pages/admin/AdminLogin'
-import AdminDashboard from './pages/admin/AdminDashboard'
-import { Routes, Route } from "react-router-dom"
 
-const App = () => {
+import {  Routes, Route } from "react-router-dom";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import DashboardHome from "./pages/admin/DashboardHome";
+import Users from "./pages/admin/Users";
+import LoginLogs from "./pages/admin/LoginLogs";
+import CategoryPage from "./pages/admin/CategoryPage"
+
+
+
+
+
+function App  ()  {
   return (
+     
    <Routes>
       <Route path="/" element={<Landing />} />
       
@@ -37,10 +46,17 @@ const App = () => {
         <Route path="/Schedule" element={<Schedule />} />
         <Route path="/Progress" element={<Progress />} />
 
-        <Route path="/AdminLogin" element={<AdminLogin />} />
-        <Route path="/AdminDashboard" element={<AdminDashboard />} />
-
-      </Routes>
+          <Route path="/admin" element={<AdminDashboard />}>
+          <Route index element={<DashboardHome />} />
+          <Route path="users" element={<Users />} />
+          <Route path="login-logs" element={<LoginLogs />} />
+          <Route path="army" element={<CategoryPage />} />
+          <Route path="navy" element={<CategoryPage />} />
+          <Route path="air-force" element={<CategoryPage />} />
+          <Route path="paramilitary" element={<CategoryPage />} />
+        </Route>
+    </Routes>
+  
   );
 };
 

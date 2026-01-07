@@ -12,20 +12,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // 🔴 STEP 1: PROOF THAT BUTTON IS CLICKED
-    console.log("LOGIN SUBMIT CLICKED");
-
-    // 🔴 STEP 2: FORCE A NETWORK REQUEST (TEST API)
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("TEST API RESPONSE:", data);
-      })
-      .catch((err) => {
-        console.error("TEST API ERROR:", err);
-      });
-
-    // 🔴 STEP 3: REAL BACKEND CALL
     fetch("http://localhost:8080/prephub-backend/auth/login.php", {
       method: "POST",
       headers: {
@@ -38,12 +24,23 @@ const Login = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("LOGIN BACKEND RESPONSE:", data);
+        console.log("FULL LOGIN RESPONSE:", data);
 
-        if (data.success) {
-          localStorage.setItem("user", JSON.stringify(data.user));
-          navigate("/Home");
-        } else {
+       if (data.success) {
+  const role = data.role;
+
+  localStorage.setItem(
+    "user",
+    JSON.stringify({ ...data.user, role })
+  );
+
+  if (role === "admin") {
+    navigate("/admin");
+  } else {
+    navigate("/Home");
+  }
+}
+ else {
           setMessage(data.message);
         }
       })
@@ -86,7 +83,6 @@ const Login = () => {
 
           {message && <p className="error-msg">{message}</p>}
 
-          {/* 🔴 MUST BE submit */}
           <button type="submit">Login</button>
         </form>
 

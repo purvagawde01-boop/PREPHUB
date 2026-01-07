@@ -5,11 +5,25 @@
 }
 
 
-body{
+:root {
+  --bg-main: #f4f6fb;
+  --bg-card: #ffffff;
+
+  --primary: #1e40af;
+  --primary-light: #3b82f6;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  --border: #e5e7eb;
+  --radius: 12px;
+
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+body {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  color: black;
-  font-family:'poppins';
-  background-color: #f4b4a4;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
 }
