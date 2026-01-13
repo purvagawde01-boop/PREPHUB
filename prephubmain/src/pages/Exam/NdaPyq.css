@@ -1,0 +1,47 @@
+.nda-papers-page {
+  background-color: #f9fafb;
+  padding: 40px 0;
+}
+
+.nda-papers-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.papers-header {
+  margin-bottom: 30px;
+}
+
+.papers-header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.papers-header p {
+  color: #555;
+}
+
+.papers-section {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.papers-section h2 {
+  margin-bottom: 16px;
+}
+
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.paper-card {
+  background: #f1f5f9;
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 500;
+}

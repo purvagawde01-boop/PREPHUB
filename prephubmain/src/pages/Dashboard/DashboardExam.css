@@ -1,0 +1,26 @@
+.exam-container {
+  margin-top: 40px;
+}
+
+.exam-section {
+  margin-bottom: 50px;
+}
+
+.exam-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.exam-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 500;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}

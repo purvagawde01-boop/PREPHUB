@@ -1,0 +1,40 @@
+.dashboard-planner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.planner-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.planner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.edit-btn {
+  background: transparent;
+  border: none;
+  color: #0a4d68;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.todo-list,
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.todo-list li,
+.schedule-list li {
+  margin-bottom: 8px;
+}

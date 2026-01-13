@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL PAGE LAYOUT
+========================= */
+.exam-detail-page {
+  padding: 40px 80px;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =========================
+   EXAM HEADER
+========================= */
+.exam-header {
+  margin-bottom: 30px;
+}
+
+.exam-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.exam-header p {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* =========================
+   TABS BAR
+========================= */
+.exam-tabs {
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.exam-tabs ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.exam-tabs li {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+/* =========================
+   LIST STYLING
+========================= */
+.exam-section ul {
+  padding-left: 18px;
+}
+
+.exam-section ul li {
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* =========================
+   RESOURCES GRID
+========================= */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.resource-card {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 1024px) {
+  .exam-detail-page {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exam-detail-page {
+    padding: 20px;
+  }
+
+  .exam-header h1 {
+    font-size: 24px;
+  }
+
+  .exam-tabs ul {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

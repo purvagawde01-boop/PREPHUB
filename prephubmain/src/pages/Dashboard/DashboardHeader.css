@@ -1,0 +1,25 @@
+.dashboard-header {
+  padding: 40px;
+  color: white;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.army-bg {
+  background: linear-gradient(135deg, #1f7a1f, #0f3d0f);
+}
+
+.stream-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.quote {
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0.9;
+}

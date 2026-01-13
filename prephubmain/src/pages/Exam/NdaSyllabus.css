@@ -1,0 +1,47 @@
+.syllabus-page {
+  background-color: #f9fafb;
+  padding: 40px 0;
+}
+
+.syllabus-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.syllabus-header {
+  margin-bottom: 30px;
+}
+
+.syllabus-header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.syllabus-header p {
+  color: #555;
+}
+
+.syllabus-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.syllabus-section h2 {
+  margin-bottom: 16px;
+}
+
+.syllabus-section h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.syllabus-section ul {
+  padding-left: 20px;
+}
+
+.syllabus-section li {
+  margin-bottom: 6px;
+}
